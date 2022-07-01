@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>HTML</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light w-100" >
+        <nav class=" fondo navbar navbar-expand-lg navbar-light w-100" >
             <div class="container-fluid">
               <a class="navbar-brand"href="#">
                   <img src="assets/img/iresm.png" alt="logo iresm" class="logo">
@@ -29,9 +31,7 @@
                 <li class=" nav-item">
                     <a  class=" nav-link" href="#CSS">CSS</a>
                 </li>
-                <li class=" nav-item">
-                    <a  class=" nav-link" href="#Bootstrap">bootstrap</a>
-                </li>
+                
               </ul> 
               
 
@@ -51,6 +51,13 @@
                             <p> - Article: Es para agregar información de otro sitio y que no pierda el sentido </p>
                             <p> -Aside: Es para contenido que no es de la página, como por ejemplo anuncios </p>
                             
+                        </div>
+
+                    </div>
+                    <div class="col-12 order-0 order-lg-1 col-lg-6">
+                        <div class="d-flex justify-content-end w-100">
+                            <img src="assets/img/estructura.html" alt="etiqueta">
+
                         </div>
 
                     </div>
@@ -80,30 +87,87 @@
                     </div>
                 </div>
             </section>
-            <section class="container section listas" id="listas">
-                <div class="row">
-                    <div class="col-12 order-1 order-lg-0 col-lg-6">
-                        <div class="contenedor">
-                            <h1>Tablas</h1>
-                            <p>En la estructura de la tabla podemos encontrar las siguientes etiquetas:</p>
-                            <p> -Table: encierra una tabla</p>   
-                            <p> -tr(Table Row): etiqueta que forma una fila </p>    
-                            <p> -td(Table Data): etiqueta que forma una celda</p>   
-                            <p> -Caption: Sirve para poder agregarle un título a la tabla </p>   
-                            <p> -Tfoot: sirve de forma opcional para poder agregar algo al pie de la tabla</p>   
-                          
-                        </div>
-                        <div class="contenedor-2">
-                            <h1>Listas</h1>
-                            <p>Se puede utilizar listas ordenadas "ol", o listas desordenadas "ul", y para declarar los
-                                elementos que irán dentro de la listas se utiliza la etiqueta li.</p>
-
-                        </div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                     Tablas
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <p>En la estructura de la tabla podemos encontrar las siguientes etiquetas:</p>
+                        <p> -Table: encierra una tabla</p>   
+                        <p> -tr(Table Row): etiqueta que forma una fila </p>    
+                        <p> -td(Table Data): etiqueta que forma una celda</p>   
+                        <p> -Caption: Sirve para poder agregarle un título a la tabla </p>   
+                        <p> -Tfoot: sirve de forma opcional para poder agregar algo al pie de la tabla</p>   
                     </div>
+                  </div>
                 </div>
-
-
-            </section>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Listas
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p>Se puede utilizar listas ordenadas "ol", o listas desordenadas "ul", y para declarar los
+                            elementos que irán dentro de la listas se utiliza la etiqueta li.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Atributos Importantes
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p>HTML cuenta con diferentes atributos, los más importantes podrían ser:</p>
+                        <p> -Class: sirve para darle estilo a la página a través de CSS</p>   
+                        <p> -Title: este atributo se muestra como una descripción del elemento al que pertenece </p>    
+                        <p> -Data: permite guardar un valor en la etiqueta</p> 
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Formulario
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <p >Cada vez que haces un login en un sitio o pones tus datos en cualquier campo a
+                    rellenar, es un formulario estos tiene una estructura, la cual está compuesta por:</p>
+                    <p> -form: etiqueta que engloba el formulario</p>   
+                    <p> -label: sirve para escribir el nombre de campo para rellenar </p>    
+                    <p> -input: sirve para crear un campo donde el usuario pueda interactuar</p> 
+                    <p> -button: crea un botón para enviar el formulario</p>  
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                     Inputs de Formulario
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <p >Cada vez que haces un login en un sitio o pones tus datos en cualquier campo a
+                    rellenar, es un formulario estos tiene una estructura, la cual está compuesta por:</p>
+                    <p> -form: etiqueta que engloba el formulario</p>   
+                    <p> -label: sirve para escribir el nombre de campo para rellenar </p>    
+                    <p> -input: sirve para crear un campo donde el usuario pueda interactuar</p> 
+                    <p> -button: crea un botón para enviar el formulario</p>  
+                </div>
+                </div>
+              </div> 
            
         </main>
     </header>

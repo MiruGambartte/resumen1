@@ -1,4 +1,10 @@
 .fondo{
     background-image: url(assets/img/html1\ 2.png);
 }
-    
+
+
+.img-select{
+    position: absolute;
+    width: 334px;
+    height: 318px;
+}
